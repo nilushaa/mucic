@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player-container">
+        <div class="cover-wrapper">
+          <img
+            id="cover"
+            src="./images/The Weeknd - Blinding Lights.jpg"
+            alt="cover"
+            width="200"
+          />
+          <div class="waveform">
+            <!-- 30 ta to‘lqin elementlari -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <div class="right">
+          <p class="audio-name"></p>
+
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="time-info">
+            <span id="current-time">00:00</span>
+            <span id="total-time">00:00</span>
+          </div>
+          <div class="right-bottom">
+            <audio src="./music/The Weeknd - Blinding Lights.mp3" ></audio>
+            <button id="backward"><i class="fa-solid fa-backward"></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="forward"><i class="fa-solid fa-forward"></i></button>
+            <button id="speed">1x</button>
+            <div class="voice-container">
+              <input id="voice" type="range" min="0" max="100" step="1" />
+              <span id="voice-value"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

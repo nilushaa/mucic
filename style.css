@@ -1,0 +1,134 @@
+body {
+    font-size: 25px;
+    font-family: "EB Garamond";
+    background: rgb(7, 9, 85);
+  }
+  button {
+    font-family: inherit;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 160px;
+  }
+  
+  .music-player-container {
+    width: 100%;
+    max-width: 550px;
+    height: 205px;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 20px;
+    box-shadow: 21px 19px 45px 14px rgba(0, 0, 0, 0.773);
+  }
+  #cover {
+    border-radius: 15px;
+    box-shadow: rgba(5, 2, 5, 0.6) 0px 32px 42px;
+  }
+  
+  .audio-name {
+    width: 285px;
+    text-align: center;
+    font-size: 28px;
+    color: #c6b8b8;
+  }
+  .time-info {
+    display: flex;
+    justify-content: space-between;
+  
+    span {
+      font-size: 15px;
+      color: white;
+    }
+  }
+  
+  .progress-container {
+    border-radius: 50px;
+    background-color: #ccc;
+    height: 3px;
+    width: 328px;
+  }
+  .progress {
+    height: inherit;
+    border-radius: inherit;
+    background-color: blue;
+    width: 0%;
+  }
+  .right-bottom {
+    display: flex;
+  }
+  #speed {
+    font-size: 20px;
+    width: 38.2px;
+    margin-right: 20px;
+  }
+  button {
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .voice-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    input {
+      width: 90px;
+      height: 3px;
+      color: #000;
+      accent-color: rgb(210, 195, 195);
+    }
+    span {
+      width: 36px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  
+  .cover-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: visible;
+    width: 200px;
+    height: 200px;
+  }
+  
+  #cover {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(5, 2, 5, 0.6) 0px 32px 42px;
+  }
+  
+  .waveform {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3px;
+    pointer-events: none;
+    opacity: 0.8;
+  }
+  
+  .bar {
+    width: 5px;
+    background: rgba(108, 27, 6, 0.823);
+    border-radius: 2px;
+    height: 10px;
+    transition: height 0.1s ease;
+  }
